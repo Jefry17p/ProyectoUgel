@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppP1.Pages.Equipos"
+             Title="Equipos">
+    <StackLayout Padding="10">
+        <Button Text="Agregar Equipo" x:Name="AgregarEquipo" Clicked="AgregarEquipo_Clicked"/>
+        <ListView x:Name="ListaEquipo" ItemTapped="ListaEquipos_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding nombreEquipo}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
